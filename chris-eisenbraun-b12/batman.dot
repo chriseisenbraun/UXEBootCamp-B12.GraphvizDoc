@@ -1,0 +1,28 @@
+digraph {
+    node[shape=box]
+
+        "Are you the real Batman?" -> "What kind of hero are you?";
+        "Are you the real Batman?" -> "Are you wearing hockey pads?";
+        "Are you wearing hockey pads?" -> "NOT the real Batman" [label="Yes"];
+        "Are you wearing hockey pads?" -> "Are you wearing a bat suit?" [label="No"];
+        "Are you wearing a bat suit?" -> "Does your suit have nipples?";
+        "Does your suit have nipples?" -> "NOT the real Batman"[label="Yes"];
+        "Does your suit have nipples?" -> "Do you attend parties with supermodels?"[label="No"];
+        "Do you attend parties with supermodels?" -> "NOT the real Batman" [label="No"];
+        "Do you attend parties with supermodels?" -> "Count the supermodels" [label="Yes"];
+        "Count the supermodels" -> "You are the Batman" [label="More than 3"];
+        "Count the supermodels" -> "Not a billionaire" [label="Less than 3"];
+        "Not a billionaire" -> "Not the real Batman";
+        "What kind of hero are you?" -> "The hero Gotham needs";
+        "What kind of hero are you?" -> "The hero Gotham wants";
+        "The hero Gotham wants" -> "Probably not Batman";
+        "Probably not Batman" -> "Does your suit have nipples?";
+        "The hero Gotham needs" -> "Check your weapons";
+        "Check your weapons" -> "Do you have a shotgun?";
+        "Do you have a shotgun?"  -> "Not the real Batman" [label="Yes"];
+        "Do you have a shotgun?" -> "You are the Batman" [label="No"];
+
+    }
+
+
+
